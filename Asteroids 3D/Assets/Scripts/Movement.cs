@@ -40,48 +40,38 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        
+
 
         if (Input.GetKey(KeyCode.W))
         {
-            if( currentSpeed <= maxSpeed )
-            {
-                rb.AddRelativeForce(Vector3.forward * Time.deltaTime* acelRate);
-                currentSpeed += acelRate;
-            }
-
-            if(currentSpeed > maxSpeed) { currentSpeed = maxSpeed; }
+            transform.Rotate(rotaSpeed, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            if (currentSpeed <= maxSpeed )
-            {
-                rb.AddRelativeForce(Vector3.back * Time.deltaTime * decelRate);
-                currentSpeed -= decelRate;
-            }
-            if (currentSpeed < -maxSpeed) { currentSpeed = -maxSpeed; }
+            transform.Rotate(-rotaSpeed, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(0, 0, rotaSpeed);
+            transform.Rotate(0, -rotaSpeed, 0);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(0, 0, -rotaSpeed);
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
             transform.Rotate(0, rotaSpeed, 0);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(0, -rotaSpeed, 0);
+            transform.Rotate(0, 0, rotaSpeed);
         }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(0, 0, -rotaSpeed);
+        }
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Rotate(rotaSpeed, 0, 0);
