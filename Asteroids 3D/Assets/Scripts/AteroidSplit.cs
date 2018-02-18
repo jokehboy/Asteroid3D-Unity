@@ -9,8 +9,6 @@ public class AteroidSplit : MonoBehaviour {
     public float randForce;
     public bool lastSpit = true;
 
-    
-
 
 	// Use this for initialization
 	void Start () {
