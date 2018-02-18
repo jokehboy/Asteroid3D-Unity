@@ -90,7 +90,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545519523060106}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
@@ -123,5 +123,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AsterSplit: {fileID: 1931504862173036, guid: 799e04902aeaa524b97a4048f74d02f4, type: 2}
   randSpawnRad: 10
-  randForce: 60000
+  randForce: 200
   lastSpit: 0
