@@ -8,7 +8,6 @@ public class EnemySpawn : MonoBehaviour {
     
     public float spawnRad;
     public float randForce;
-    public float randTorq;
     public bool spawning = false;
 
 	// Use this for initialization
@@ -30,7 +29,8 @@ public class EnemySpawn : MonoBehaviour {
         spawning = true;
         var spawnedEnemy = Instantiate(enemyPref, transform.position + Random.insideUnitSphere * spawnRad, Quaternion.identity);
         spawnedEnemy.GetComponent<Rigidbody>().AddRelativeForce(Random.onUnitSphere * Random.Range(2000, randForce));
-        spawnedEnemy.GetComponent<Rigidbody>().AddRelativeTorque(Random.insideUnitSphere * Random.Range(1000, randTorq));
+        
+        
     }
 
 }
