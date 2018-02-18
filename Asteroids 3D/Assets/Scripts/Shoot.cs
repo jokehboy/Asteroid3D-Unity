@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour {
 
     public GameObject projectile;
-
+    public float shootForce;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +17,7 @@ public class Shoot : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce);
 
             new WaitForSeconds(5f);
             Destroy(bullet, 5f);
