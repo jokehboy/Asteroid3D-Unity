@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Movement Script for the 3D Asteroid game
@@ -83,6 +84,14 @@ public class Movement : MonoBehaviour {
 
 
 
+    }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag == "Asteroid1")
+        {
+            SceneManager.LoadScene("Dead");
+        }
     }
 }
 

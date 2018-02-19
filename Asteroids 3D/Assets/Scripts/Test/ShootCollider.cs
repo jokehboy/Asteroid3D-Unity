@@ -22,7 +22,8 @@ public class ShootCollider : MonoBehaviour {
             AteroidSplit split = hit.GetComponent<AteroidSplit>();
 
             split.AsteroidDiv();
-            
+
+            GameObject.Find("UIContr").GetComponent<UIContr>().currentScore += 5;
 
             Destroy(this.gameObject);
 
