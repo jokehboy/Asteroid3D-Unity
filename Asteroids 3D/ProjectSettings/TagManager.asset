@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Asteroid1
   - bullet
+  - building
+  - spawnContr
+  - asteroid2
+  - asteroid3
+  - asteroid1
+  - uiContr
   layers:
   - Default
   - TransparentFX

@@ -86,6 +86,8 @@ public class Movement : MonoBehaviour {
 
     }
 
+
+
     private void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "Asteroid1")

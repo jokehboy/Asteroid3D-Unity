@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114877375320163060}
   m_Layer: 0
   m_Name: Aster3
-  m_TagString: Asteroid1
+  m_TagString: asteroid3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
