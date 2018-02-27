@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4198406876742338}
-  - component: {fileID: 114178951363421648}
+  - component: {fileID: 114876369699637850}
   m_Layer: 0
   m_Name: SpwanPoint
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114178951363421648
+--- !u!114 &114876369699637850
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,12 +48,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1330881828811418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc011cd828389a34ab3ec72d786f2352, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b9023624dc1c6842a3b2a5f4654fd7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 0}
-  SpawnCheckPrefab: {fileID: 0}
-  SpawnContr: {fileID: 0}
-  size: {x: 200, y: 200, z: 200}
-  center: {x: 0, y: 0, z: 0}
+  enemyPref: {fileID: 1545519523060106, guid: e3c1e26383da04f4fbe6dbf63f041cdb, type: 2}
+  spawnRad: 10
+  randForce: 20000
   spawning: 0
